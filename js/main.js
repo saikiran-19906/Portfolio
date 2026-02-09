@@ -17,7 +17,7 @@ $(document).ready(function () {
         },
 
 		  {
-          type: "grid-mixed",
+          type: "grid-mixed-phone",
           items: [
 			   { type: "video",
           src: "https://player.vimeo.com/video/1163061662?h=31e7f5d1c1"},
