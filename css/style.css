@@ -173,15 +173,15 @@ nav a.active {
 .footer {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
-  gap: 60px;
+  gap: 40px;
   padding: 60px 50px;
 }
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 40px 50px;
+  padding: 20px 20px;
   border-top: 1px solid #e5e5e5;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .footer-block {
