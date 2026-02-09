@@ -204,27 +204,40 @@ nav a.active {
   color: #000;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE UX FIX (NO DESKTOP IMPACT)
+========================= */
 @media (max-width: 900px) {
-  .layout {
-    flex-direction: column;
-  }
 
-  .projects,
+  /* Remove desktop-like padding */
   .project-view {
-    width: 100%;
+    padding: 0;
   }
 
   .project-panel {
-    max-height: none;
-    border: none;
+    padding: 16px;
   }
 
-  .projects-grid {
-    gap: 40px 24px;
+  /* Pull media closer to top */
+  .media {
+    gap: 32px;
   }
 
-  .media-video iframe {
-    aspect-ratio: 9 / 16;
+  /* Description should NOT push content down */
+  .description {
+    margin-top: 16px;
+    padding-top: 12px;
   }
+
+  /* Ensure first media appears immediately */
+  .media-video,
+  .media-variation:first-child {
+    margin-top: 0;
+  }
+
+  /* Prevent huge empty scroll zones */
+  .project-panel {
+    min-height: auto;
+  }
+
 }
