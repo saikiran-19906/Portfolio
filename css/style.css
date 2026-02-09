@@ -204,40 +204,56 @@ nav a.active {
   color: #000;
 }
 
-/* =========================
-   MOBILE UX FIX (NO DESKTOP IMPACT)
-========================= */
+/* ===============================
+   MOBILE: STACK PROJECT BELOW LIST
+   Instagram / YouTube style flow
+================================ */
 @media (max-width: 900px) {
 
-  /* Remove desktop-like padding */
+  /* Force vertical document flow */
+  .layout {
+    display: block;
+  }
+
+  /* Left panel first */
+  .projects {
+    width: 100%;
+    padding: 32px 24px;
+  }
+
+  /* Right panel BELOW left panel */
   .project-view {
+    width: 100%;
     padding: 0;
+    position: relative;
   }
 
+  /* Remove desktop card feeling */
   .project-panel {
-    padding: 16px;
+    max-height: none;
+    border: none;
+    padding: 16px 24px;
+    background: #000;
   }
 
-  /* Pull media closer to top */
+  /* Project content becomes a feed */
   .media {
-    gap: 32px;
+    gap: 24px;
   }
 
-  /* Description should NOT push content down */
+  /* Videos & images full-width feed style */
+  .media-video iframe,
+  .media-grid img,
+  .grid-video iframe {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  /* Description sticks close to content */
   .description {
     margin-top: 16px;
     padding-top: 12px;
   }
 
-  /* Ensure first media appears immediately */
-  .media-video,
-  .media-variation:first-child {
-    margin-top: 0;
-  }
-
-  /* Prevent huge empty scroll zones */
-  .project-panel {
-    min-height: auto;
-  }
-
 }
+
