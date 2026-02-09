@@ -8,7 +8,7 @@ $(document).ready(function () {
       video: "https://player.vimeo.com/video/846694235?h=135c7d1745",
       variations: [
 		   {
-          type: "grid-mixed",
+          type: "grid-mixed-phone",
           items: [
             { type: "video",
           src: "https://player.vimeo.com/video/864138397?h=31c5068d43"},
