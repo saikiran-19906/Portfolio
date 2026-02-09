@@ -78,18 +78,57 @@ $(document).ready(function () {
       ]
     },
 
-    xxx: {
-      title: "XXX",
+    talabat: {
+      title: "Talabat",
       description: "Placeholder project.",
       video: null,
-      variations: []
+      variations: [
+		  
+		   {
+          type: "grid-2",
+          items: [
+            { type: "video2",
+          src: "https://player.vimeo.com/video/808445120?h=5c689a09f4",ratio: "r-9-16"},
+			{ type: "video2",
+          src: "https://player.vimeo.com/video/808445186?h=5a19d51b94",ratio: "r-9-16"}, 
+			  { type: "video2",
+          src: "https://player.vimeo.com/video/808444936?h=cb07f400fc",ratio: "r-9-16"},
+			  { type: "video2",
+          src: "https://player.vimeo.com/video/808445066?h=5f511c5344",ratio: "r-9-16"}, 
+			  { type: "video2",
+          src: "https://player.vimeo.com/video/808445015?h=4c69537552",ratio: "r-1-1"},
+		  ]
+        },
+		  
+		  
+	  ]
     },
 
-    yyy: {
-      title: "YYY",
+    rockit: {
+      title: "Rockit",
       description: "Placeholder project.",
-      video: null,
-      variations: []
+       video: "https://player.vimeo.com/video/721873142?h=e1ae903710",
+      variations: [
+		    {
+          type: "grid-2",
+          items: [
+            { type: "video3",
+          src: "https://player.vimeo.com/video/719961178?h=080300825c",ratio: "r-1-1"},
+			{ type: "video3",
+          src: "https://player.vimeo.com/video/719961260?h=9d8b2a8c5f",ratio: "r-1-1"}, 
+			  { type: "video3",
+          src: "https://player.vimeo.com/video/719961231?h=3b33f14c6b",ratio: "r-1-1"},
+			  { type: "video3",
+          src: "https://player.vimeo.com/video/719961285?h=f8494ff242",ratio: "r-1-1"}, 
+			  { type: "video3",
+          src: "https://player.vimeo.com/video/719961396?h=35bab66122",ratio: "r-1-1"},
+			  { type: "video3",
+          src: "https://player.vimeo.com/video/719961147?h=c45dfc12ca",ratio: "r-1-1"},
+		  ]
+        },
+		  
+		  
+	  ]
     }
   };
 
@@ -120,6 +159,33 @@ $(document).ready(function () {
     if (item.type === "video") {
       html += `
         <div class="grid-video">
+          <iframe
+            src="${item.src}"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      `;
+    }
+    /* VIDEO IN GRID-vertical */
+
+	   if (item.type === "video2") {
+      html += `
+        <div class="grid-video2">
+          <iframe
+            src="${item.src}"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      `;
+    }
+	  
+	  /* VIDEO IN GRID-Square */
+
+	   if (item.type === "video3") {
+      html += `
+        <div class="grid-video3">
           <iframe
             src="${item.src}"
             allow="autoplay; fullscreen; picture-in-picture"
