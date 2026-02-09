@@ -11,7 +11,7 @@ $(document).ready(function () {
           type: "grid-mixed",
           items: [
             { type: "video",
-          src: "https://player.vimeo.com/video/864138397?h=31c5068d43",ratio: "r-16-9"},
+          src: "https://player.vimeo.com/video/864138397?h=31c5068d43"},
 			   
 		  ]
         },
@@ -20,7 +20,7 @@ $(document).ready(function () {
           type: "grid-mixed",
           items: [
 			   { type: "video",
-          src: "https://player.vimeo.com/video/1163061662?h=31e7f5d1c1",ratio: "r-16-9"},
+          src: "https://player.vimeo.com/video/1163061662?h=31e7f5d1c1"},
 		
 			  
           ]
