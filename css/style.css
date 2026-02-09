@@ -61,7 +61,7 @@ nav a.active {
 
 .project-card h3 {
   font-size: 16px;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   color: #555;
 }
 
@@ -129,7 +129,25 @@ nav a.active {
   aspect-ratio: 16 / 9;
   border: none;
   display: block;
+
 }
+/* ===== GRID VIDEO 9X16===== */
+.grid-video2 iframe {
+  width: 80%;
+  aspect-ratio: 9/16;
+  border: none;
+  display: block;
+  margin: auto
+}
+/* ===== GRID VIDEO 1X1 ===== */
+.grid-video3 iframe {
+  width: 90%;
+  aspect-ratio: 1/1;
+  border: none;
+  display: block;
+  margin: auto
+}
+
 /* ABOUT PAGE */
 .about-wrapper {
     padding: 80px;
