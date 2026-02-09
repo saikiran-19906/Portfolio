@@ -8,12 +8,12 @@ $(document).ready(function () {
       video: "https://player.vimeo.com/video/846694235?h=135c7d1745",
       variations: [
 		   {
-          type: "grid-2",
+          type: "grid-mixed",
           items: [
             { type: "video",
-          src: "https://player.vimeo.com/video/864138397?h=31c5068d43"},
+          src: "https://player.vimeo.com/video/864138397?h=31c5068d43",ratio: "r-16-9"},
 			   { type: "video",
-          src: "https://player.vimeo.com/video/1163061662?h=31e7f5d1c1"},
+          src: "https://player.vimeo.com/video/1163061662?h=31e7f5d1c1",ratio: "r-16-9"},
 		
 			  
           ]
